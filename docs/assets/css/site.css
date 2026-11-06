@@ -446,3 +446,17 @@ html[data-lang="en"] .exhbody>div[data-lang="en"]{display:block}
   display:block;line-height:1.55;font-size:.74rem;letter-spacing:.02em;
   color:var(--ink-dim);padding:.55em .2em 0;text-align:left}
 .exhfig__cap span{display:block}
+
+/* exhibition list: separate title and meta onto two comfortable lines */
+.exh .exh__t{display:block;line-height:1.35}
+.exh .exh__m{display:block;margin-top:.42em;line-height:1.5}
+.exh--linked .exh__t{margin-top:.1em}
+/* video link card */
+.videolink{margin-top:1.6em}
+.videolink a{
+  display:inline-flex;align-items:center;gap:.7em;
+  padding:.82em 1.25em;border:1px solid var(--line,rgba(231,225,211,.26));
+  color:var(--ink);text-decoration:none;border-radius:2px;
+  transition:background .4s var(--ease),border-color .4s var(--ease)}
+.videolink a:hover{background:rgba(231,225,211,.07);border-color:rgba(231,225,211,.5)}
+.videolink svg{width:1.05em;height:1.05em;flex:0 0 auto;fill:currentColor}
